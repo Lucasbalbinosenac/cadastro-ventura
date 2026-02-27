@@ -1,0 +1,443 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "nunito", sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+  zoom: 0.85;
+}
+
+.pagetotal {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.topo {
+  padding: 30px 50px;
+  height: auto;
+}
+
+.logo img {
+  height: auto;
+  width: 60px;
+  margin-bottom: 40px;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.passos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 135px;
+}
+
+.passo {
+  display: flex;
+  position: relative;
+}
+
+.passo>img:first-child {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+}
+
+.check {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* CARD GRANDE */
+.card-grande {
+  flex: 55%;
+  /* Ocupa 2 partes do espaço (maior) */
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #00000040;
+  height: fit-content;
+}
+
+.confirmacao {
+  background: #cfe4df86;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  align-items: center;
+  box-shadow: 4px 4px 4px #00a48329;
+}
+
+.alinhamento-confirmação {
+  line-height: 1.5;
+  font-size: 16px;
+
+}
+
+/* .check {
+  background: #0ea57a;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+} */
+
+.secao-titulo {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.detalhes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.label {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.subtitulo {
+  font-size: 12px;
+}
+
+.pedido-box {
+  background: #f3914b16;
+  /* border: 1px solid #F3914B; */
+  color: #F3914B;
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  grid-column: 3;
+  /* Força ele a ficar na terceira coluna */
+  grid-row: 2 / 4;
+  /* Faz ele ocupar duas linhas para ficar quadrado */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.alertas-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 15px;
+  /* Espaço entre o primeiro e o segundo alerta */
+}
+
+.alerta {
+  background: #c6c6c61f;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #1AA483;
+}
+
+.qr-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.qr-code img {
+  width: 180px;
+  height: auto;
+}
+
+.baixar-pedido {
+  color: #F3914B;
+}
+
+/* ----------- CARTEIRA ----------- */
+.carteira-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;  /* Alinha o QR Code verticalmente com o bloco de botões */
+  gap: 45px;
+  margin-top: 20px;
+}
+
+.wallet-botoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 35px;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.btn-apple {
+  height: auto;
+  width: 300px;
+  cursor: pointer;
+}
+
+.btn-google {
+  height: auto;
+  width: 400px;
+  cursor: pointer;
+}
+
+/* RESUMO */
+
+.coluna-lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* Espaço entre o Card de Resumo e o Banner do App */
+}
+
+.card-resumo {
+  width: 100%;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 4px #00000040;
+}
+
+.resumo-borda h2 {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.resumo-box {
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #707070;
+  border-radius: 10px;
+}
+
+.resumo-box h4{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  
+}
+
+.resumo-box ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.resumo-box li {
+  margin-bottom: 8px;
+}
+
+.lista-beneficios{
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  gap: 12px;
+}
+
+.lista-beneficios li {
+  display: flex;      
+  align-items: center; /* Alinha o ícone e o texto perfeitamente ao centro vertical */
+  gap: 10px;         
+  margin-bottom: 0;   
+}
+
+.lista-beneficios li img {
+  width: 20px;        
+  height: auto;
+  flex-shrink: 0;     /* Impede que o ícone amasse se o texto for longo */
+}
+
+.linha {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.linha-valor {
+  display: flex;
+  justify-content: space-between; /* Empurra o texto para esquerda e o valor para direita */
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.valores{
+  margin-top: 15px;
+}
+
+.total {
+  color: #0ea57a;
+  font-size: 20px;
+}
+
+/* APP */
+.app-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+.app-logo-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ventura-logo{
+  height: auto;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.app-texto {
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+}
+
+.app-area h2 {
+  color: #1AA483;
+  font-size: 33px;
+  font-weight: bolder;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.app-texto p {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+/* BOTÃO */
+.btn-retornar {
+  margin-top: 30px;
+  padding: 12px 40px;
+  border-radius: 30px;
+  border: none;
+  background: #e58a3a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-retornar:hover {
+  filter: brightness(1.1);
+}
+
+/* --- RESPONSIVIDADE (Celulares e Tablets) --- */
+
+@media (max-width: 1024px) {
+    .container {
+        width: 95%; /* Aumenta o uso da tela em tablets */
+    }
+    
+    .pagetotal {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* 1. Ajuste do Layout Principal */
+    .pagetotal {
+        flex-direction: column; /* Transforma o lado a lado em um embaixo do outro */
+        align-items: stretch;
+    }
+
+    /* 2. Ajuste dos Cards (Ocupar largura total) */
+    .card-grande, .coluna-lateral {
+        flex: none;
+        width: 100%;
+    }
+
+    /* 3. Grid de Detalhes (1 ou 2 colunas no mobile) */
+    .detalhes-grid {
+        grid-template-columns: 1fr 1fr; /* 2 colunas para aproveitar espaço */
+        gap: 15px;
+    }
+
+    /* Faz o Box do Pedido ocupar a largura toda no final do grid */
+    .pedido-box {
+        grid-column: span 2;
+        grid-row: auto;
+        font-size: 28px;
+    }
+
+    /* 4. Carteira e QR Code */
+    .carteira-area {
+        flex-direction: column; /* QR em cima, botões embaixo */
+        gap: 20px;
+    }
+
+    .btn-apple, .btn-google {
+        width: 100%; /* Botões da carteira ocupam largura total */
+        max-width: 300px;
+    }
+
+    /* 5. Área do Aplicativo */
+    .app-area {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .app-texto {
+        width: 100%;
+    }
+
+    .app-area h2 {
+        font-size: 26px; /* Reduz título do app no mobile */
+    }
+
+    .ventura-logo {
+        width: 150px;
+    }
+
+    /* 6. Cabeçalho e Passos */
+    .topo {
+        padding: 20px;
+    }
+
+    .passos {
+        gap: 20px; /* Reduz o gap gigante original de 135px */
+    }
+
+    /* 7. Botão de Retorno */
+    .btn-retornar {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .detalhes-grid {
+        grid-template-columns: 1fr; /* Apenas 1 coluna em celulares muito pequenos */
+    }
+
+    .pedido-box {
+        grid-column: span 1;
+    }
+}

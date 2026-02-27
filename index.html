@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="./java-formulario1.js" defer></script>
+    <link rel="stylesheet" href="https://use.typekit.net/tci8drg.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="logo">
+            <a href="../index.html">
+            <img src="./img/logo.verde.png" alt="logo-ventura">
+        </a>
+        </div>
+
+        <div class="passos">
+            <div class="passo ativo">
+                <img src="./img/passo-verde.png" alt="passo-ativo" class="passso-verde">
+                <img src="./img/check.png" alt="check" class="check">
+            </div>
+            <div class="passo">
+                <img src="./img/passo-inativo.png" alt="passo inativo">
+            </div>
+            <div class="passo">
+                <img src="./img/passo-inativo2.png" alt="passo inativo2">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- Dados Cadastrais -->
+        <section class="card">
+            <h2>Dados cadastrais</h2>
+
+            <div class="grid-4">
+                <input type="text" placeholder="Nome completo">
+                <input type="text" placeholder="CPF">
+                <select class="select-class">
+                    <option value="" disabled selected hidden>Gênero</option>
+                    <option>Feminino</option>
+                    <option>Masculino</option>
+                    <option>Desejo não informar</option>
+                </select>
+                <input type="text" placeholder="Data de nascimento">
+            </div>
+
+            <div class="grid-3">
+                <div class="nome-social">
+                    <label>Nome social</label>
+                    <div class="botoes">
+                        <button class="btn">Sim</button>
+                        <button class="btn">Não</button>
+                    </div>
+                </div>
+                <input type="text" placeholder="Profissão">
+                <input type="text" placeholder="Faixa de renda mensal" class="renda">
+            </div>
+        </section>
+
+        <!-- Endereço -->
+        <section class="card">
+            <h2>Endereço</h2>
+
+            <div class="grid-1">
+                <input type="text" placeholder="CEP">
+            </div>
+
+            <div class="grid-5">
+                <select class="select-class">
+                    <option value="" disabled selected hidden>Tipo Logradouro</option>
+                    <option>Rua</option>
+                    <option>Avenida</option>
+                    <option>Estrada</option>
+                    <input type="text" placeholder="Logradouro">
+                    <input type="text" placeholder="Bairro">
+                    <input type="text" placeholder="Cidade">
+                    <select class="select-class">
+                        <option value="" disabled selected hidden>UF</option>
+                        <option>SP</option>
+                        <option>RJ</option>
+                        <option>MG</option>
+                    </select>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="card">
+            <h2>Dados de contato</h2>
+
+            <div class="grid-3-1">
+                <input type="email" placeholder="E-mail">
+                <input type="text" placeholder="Tipo telefone">
+                <input type="text" placeholder="Telefone">
+            </div>
+        </section>
+
+        <div class="acoes">
+            <button a class="proximo" onclick="window.location.href='./formulario2.html'">Próximo</button>
+
+    </main>
+
+</body>
+
+</html>

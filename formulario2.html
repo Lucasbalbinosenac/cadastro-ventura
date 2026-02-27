@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <link rel="stylesheet" href="https://use.typekit.net/tci8drg.css">
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="formulario2.css">
+</head>
+
+<body>
+
+  <header class="topo">
+    <div class="logo">
+      <a href="../index.html">
+            <img src="./img/logo.verde.png" alt="logo-ventura">
+        </a>
+    </div>
+
+    <div class="passos">
+      <div class="passo">
+        <img src="./img/passo-verde.png" alt="passo-ativo" class="passso-verde">
+        <img src="./img/check.png" alt="check" class="check" onclick="window.location.href='./formulario.html'">
+      </div>
+      <div class="passo ativo">
+        <img src="./img/passo-verde2.png" alt="passo-ativo" class="passso-verde">
+        <img src="./img/check.png" alt="check" class="check">
+      </div>
+      <div class="passo">
+        <img src="./img/passo-inativo2.png" alt="passo inativo2">
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <div class="page">
+
+      <!-- PULSEIRA VIP -->
+      <div class="vip-card">
+        <div class="vip-left">
+          <div class="vip-cabecalho-titulo">
+            <label class="checkbox-container">
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <h3>Adquirir Pulseira Vip-ventura</h3>
+          </div>
+          <div>
+            <span class="vip-info">
+              *Incluso chip rastreador para monitoramento contínuo durante o percurso
+            </span>
+          </div>
+        </div>
+
+        <div class="vip-preco">
+          <div class="paragrafo">
+            <p>Por apenas</p>
+            <p><strong>R$ 20,00</strong></p>
+          </div>
+          <img src="./img/pulseira-verde.png" alt="pulseira"
+          class="pulseira">
+        </div>
+      </div>
+
+      <!-- DADOS DE PAGAMENTO -->
+      <div class="card">
+        <h2>Dados de pagamento</h2>
+
+        <div class="grid-2">
+          <select class="select-class">
+            <option value="" disabled selected hidden>Formas de pagamento</option>
+            <option>Cartão de crédito</option>
+            <option>Débito em conta</option>
+            <option>Pix</option>
+          </select>
+
+          <select class="select-class">
+            <option value="" disabled selected hidden>Valor</option>
+            <option>À vista R$150,00</option>
+            <option>2x parcelas de R$75,00</option>
+            <option>3x parcelas de R$50,00</option>
+            <option>4x parcelas de R$34,50</option>
+            <option>5x parcelas de R$30,00</option>
+            <option>6x parcelas de R$25,00</option>
+          </select>
+        </div>
+
+        <div class="grid-2">
+          <input type="text" placeholder="Número do cartão">
+          <input type="text" placeholder="Data de validade">
+        </div>
+      </div>
+
+      <!-- ITENS SUGESTIVOS -->
+      <div class="card">
+        <h2>Itens sugestivos para compra</h2>
+
+        <div class="itens-grid">
+          <div class="item">
+            <div class="icone">
+              <img src="./img/garrafa.png" alt="">
+            </div>
+            <p>Garrafa de água</p>
+          </div>
+
+          <div class="item">
+            <div class="icone">
+              <img src="./img/bolsa.png" alt="">
+            </div>
+            <p>Cargueira</p>
+          </div>
+
+          <div class="item">
+            <div class="icone">
+              <img src="./img/botas.png" alt="">
+            </div>
+            <p>Botas de Trekking</p>
+          </div>
+
+          <div class="item">
+            <div class="icone">
+              <img src="./img/camisa.png" alt="">
+            </div>
+            <p>Vestimenta Proteção UV</p>
+          </div>
+
+          <div class="item">
+            <div class="icone">
+              <img src="./img/carregador.png" alt="">
+            </div>
+            <p>Powerbank</p>
+          </div>
+
+          <div class="item">
+            <div class="icone">
+              <img src="./img/repelente.png" alt="">
+            </div>
+            <p>Repelente</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTÕES -->
+      <div class="botoes">
+        <button class="btn-secundario" onclick="window.location.href='./formulario.html'">Retornar</button>
+        <button class="btn-primario" onclick="window.location.href='./formulario3.html'">Próximo</button>
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
